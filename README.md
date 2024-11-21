@@ -37,6 +37,8 @@ By providing a structured approach to identifying high-impact regions for renewa
 
 This project builds upon previous research in energy demand prediction, renewable energy potential assessment, and the socio-economic impact of electrification.
 
+### DATA
+
 ### Data Understanding
 The following data was used to achieve the project objectives:
 
