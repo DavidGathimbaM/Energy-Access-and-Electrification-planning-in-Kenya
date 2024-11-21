@@ -91,9 +91,16 @@ The map provides a clear visual aid for identifying regions where wind  energy c
 ![image](https://github.com/user-attachments/assets/60e5ebd1-d1da-4f88-ab10-8e5844c408a8)
 
 
+**6. Datasets Merging**
+![image](https://github.com/user-attachments/assets/405ac42a-0af9-40a8-9d00-c617394a19b3)
+![image](https://github.com/user-attachments/assets/40be7d09-b0a8-4476-b1c0-a291019a7aa6)
 
 
-
+### Machine Learning
+**(a). Clustering Algorithms**
+Objective 1:
+Identify regions with sparse grid infrastructure and high population density where wind farms and microgrids could be feasible. This will be determined by analyzing population density projections, income distribution, and wind speed.
+**1. K-Means Clustering**
 
 ### Recommendations
 
