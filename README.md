@@ -100,7 +100,7 @@ The map provides a clear visual aid for identifying regions where wind  energy c
 **(a). Clustering Algorithms**
 Objective 1:
 Identify regions with sparse grid infrastructure and high population density where wind farms and microgrids could be feasible. This will be determined by analyzing population density projections, income distribution, and wind speed.
-**1. K-Means Clustering**
+### 1.K-Means Clustering
 ![image](https://github.com/user-attachments/assets/9eb313a9-3d17-4953-b462-bf071b2cca76)
 ![image](https://github.com/user-attachments/assets/1d10de48-1877-4660-bf97-53e2b80f082b)
 From the above visualization, using 2 clusters is the optimal choice for segmenting regions based on grid infrastructure sparsity and wind microgrid feasibility.
@@ -109,7 +109,7 @@ From the above visualization, using 2 clusters is the optimal choice for segment
 
 **Explore cluster characteristics**
 
-*Findings;*
+***Findings;***
 
 **1. Cluster 0**
 
@@ -138,7 +138,7 @@ The average income distribution in Cluster 1 is 21.06, indicating that **only 21
 
 Conclusively, this model has successfully created meaningful clusters with a significant difference between them.
 
-**HDBSCAN**
+### 2.HDBSCAN
 
 ![image](https://github.com/user-attachments/assets/778c11b4-93b0-4c18-92cd-40ae09d436da)
 
@@ -149,6 +149,24 @@ Cluster Stability Scores: [0.         0.         0.         ... 0.         0.973
 
 ![image](https://github.com/user-attachments/assets/15c7fe93-5a2b-4f86-b652-ea7ebd342d68)
 
+*Fine-Tuning with Grid Search. Explore various combinations of HDBSCAN parameters to optimize clustering performance.*
+![image](https://github.com/user-attachments/assets/822f2f6b-aefe-47f3-bb9f-3aac4914c6fa)
+***Findings***
+The visualization reveals distinct groupings of points based on the PCA-reduced data. Clusters appear compact and separated, which aligns with the favorable DBI score. This implies that the areas in the dataset are grouped into well-defined regions based on density.
+
+Some points are scattered and appear isolated from any cluster in the visualization, likely labeled as noise (-1). These noise points are considered outliers by HDBSCAN. In the context of our project (Energy Access and Electrification Planning in Kenya), these points might represent regions with atypical characteristics where extending the grid or establishing microgrids could be inefficient.
+
+Many clusters appear elongated or linear, which could imply correlations between features in the data. This linear structure indicates that certain features (e.g., population density, grid values) might be strongly correlated, influencing cluster shapes.
+
+There are visually distinct groups of clusters, which might represent different types of regions in terms of development or density.This separation could help in identifying areas that are more suitable for microgrids due to their density characteristics.
+
+HDBSCAN has grouped regions with similar density patterns. Clusters representing lower-density, geographically separated areas could be prime candidates for microgrid solutions, where extending a centralized power grid is less efficient. Here the microgrids might be more efficient.
+
+**********************
+
+The clusters identified by HDBSCAN help pinpoint regions where microgrids could be more feasible. Lower-density clusters with less connectivity to high-density regions suggest areas that may benefit from decentralized energy solutions.
+
+The model labels some points as noise, indicating regions that are either too isolated or unique to fit into any cluster. These might require custom solutions, such as isolated power systems or further investigation to understand their unique characteristics.
 
 ### Recommendations
 
