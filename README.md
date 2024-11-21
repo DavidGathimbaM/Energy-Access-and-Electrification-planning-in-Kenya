@@ -101,6 +101,31 @@ The map provides a clear visual aid for identifying regions where wind  energy c
 Objective 1:
 Identify regions with sparse grid infrastructure and high population density where wind farms and microgrids could be feasible. This will be determined by analyzing population density projections, income distribution, and wind speed.
 **1. K-Means Clustering**
+![image](https://github.com/user-attachments/assets/9eb313a9-3d17-4953-b462-bf071b2cca76)
+![image](https://github.com/user-attachments/assets/1d10de48-1877-4660-bf97-53e2b80f082b)
+From the above visualization, using 2 clusters is the optimal choice for segmenting regions based on grid infrastructure sparsity and wind microgrid feasibility.
+
+![image](https://github.com/user-attachments/assets/149ee52c-fdd3-4a62-aa09-14249fe705b2)
+
+Explore cluster characteristics
+Findings;
+1. Cluster 0
+The areas in cluster 0 are relatively densely populated with approximately 95.19 people per square kilometers.
+
+The wind conditions in this cluster are slightly stronger than in Cluster 1, with an average speed of 6.14 m/s at 100 meters above ground level. Therefore, these regions are suitable for both wind farms and wind microgrids.
+
+The grid infrastructure in Cluster 0 is significantly limited, with a value of 0.000096. Given the region's population density, there is clearly high demand for electricity but limited transmission capacity.
+
+The average income distribution of Cluster 0 is 41.999, indicating that approximately 50% of the population lives below the $2.15 poverty line. Therefore, this cluster has a higher proportion of people living in poverty.
+
+2. Cluster 1
+Compared to Cluster 0, the regions in Cluster 1 have a slightly lower population density of 94.17 people per square kilometer.
+
+Wind conditions in Cluster 1 are generally calmer, with an average wind speed of 5.80 m/s at 100 meters above ground level.
+
+Cluster 1 has a higher presence of grid structures, with a grid value of 0.5524, indicating that these regions are likely more developed compared to those in Cluster 0 and have higher access to electricity/energy.
+
+The average income distribution in Cluster 1 is 21.06, indicating that only 21.06% of the population in these regions lives below the $2.15 poverty line.
 
 ### Recommendations
 
