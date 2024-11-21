@@ -108,8 +108,11 @@ From the above visualization, using 2 clusters is the optimal choice for segment
 ![image](https://github.com/user-attachments/assets/149ee52c-fdd3-4a62-aa09-14249fe705b2)
 
 **Explore cluster characteristics**
+
 *Findings;*
+
 **1. Cluster 0**
+
 The areas in cluster 0 are **relatively densely populated** with approximately 95.19 people per square kilometers.
 
 The wind conditions in this cluster are slightly stronger than in Cluster 1, with an average speed of 6.14 m/s at 100 meters above ground level. Therefore, these regions are suitable for both **wind farms and wind microgrids**.
@@ -119,6 +122,7 @@ The grid infrastructure in Cluster 0 is significantly limited, with a value of 0
 The average income distribution of Cluster 0 is 41.999, indicating that approximately **50% of the population lives below the $2.15 poverty line**. Therefore, this cluster has a higher proportion of people living in poverty.
 
 **2. Cluster 1**
+
 Compared to Cluster 0, the regions in Cluster 1 have a **slightly lower population density** of 94.17 people per square kilometer.
 
 Wind conditions in Cluster 1 are **generally calmer**, with an average wind speed of 5.80 m/s at 100 meters above ground level.
@@ -128,10 +132,24 @@ Cluster 1 has a **higher presence of grid structures**, with a grid value of 0.5
 The average income distribution in Cluster 1 is 21.06, indicating that **only 21.06% of the population in these regions lives below the $2.15 poverty line**.
 
 **Evaluation**
+
 -A **Davies-Bouldin Index of 0.73315** indicates that the clusters are relatively compact and distinct.
 -A **Calinski-Harabasz Score of 995263.1557610929** data points in each cluster are tightly grouped together, and the clusters themselves are well-separated.
 
 Conclusively, this model has successfully created meaningful clusters with a significant difference between them.
+
+**HDBSCAN**
+
+![image](https://github.com/user-attachments/assets/778c11b4-93b0-4c18-92cd-40ae09d436da)
+
+Davies-Bouldin Index: 0.7478548169282285
+Calinski-Harabasz Index: 331519.20516841765
+Cluster Labels: [ -1  -1  -1 ...  -1 353 353]
+Cluster Stability Scores: [0.         0.         0.         ... 0.         0.97330465 0.97330465]
+
+![image](https://github.com/user-attachments/assets/15c7fe93-5a2b-4f86-b652-ea7ebd342d68)
+
+
 ### Recommendations
 
 The **government of Kenya** in collaboration with the **private sector** should adopt this deployment model as a strategic guide for the placement of wind farms and microgrids. This approach will enhance energy and electricity access, promote sustainable development, and strengthen the economic resilience of rural communities.
