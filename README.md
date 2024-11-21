@@ -23,13 +23,6 @@ This project utilizes geospatial data for Kenya to support strategic objectives 
 
 **Classification and clustering algorithms** were applied to identify areas with sparse grid infrastructure and high population density, to highlight regions where wind farms and wind microgrids could be feasible solutions. 
 
-**Findings:**
-
-The machine learning analysis identified regions suitable for microgrids to be relatively densely populated, with an average of approximately 95.19 people per square kilometer. These areas also experience slightly stronger wind conditions, with an average speed of 6.14 m/s at 100 meters above ground level, making them well-suited for wind farms and microgrid installations.
-
-Grid infrastructures in these regions were found to be significantly limited. Given the region's population density, there is clearly a higher demand for electricity but limited transmission capacity.
-
-Approximately 50% of the population lives below the $2.15 poverty line, highlighting the high likelihood of rural-to-urban migration and the urgent need for economic empowerment.
 
 ### Business Understanding
 This project addresses the pressing issue of low electricity access rates in Kenya, where approximately 25% of the population lacks reliable electricity.
@@ -98,8 +91,9 @@ The map provides a clear visual aid for identifying regions where wind  energy c
 
 ### Machine Learning
 **(a). Clustering Algorithms**
-Objective 1:
-Identify regions with sparse grid infrastructure and high population density where wind farms and microgrids could be feasible. This will be determined by analyzing population density projections, income distribution, and wind speed.
+*Objective 1:
+Identify regions with sparse grid infrastructure and high population density where wind farms and microgrids could be feasible. This will be determined by analyzing population density projections, income distribution, and wind speed.*
+
 ### 1.K-Means Clustering
 ![image](https://github.com/user-attachments/assets/9eb313a9-3d17-4953-b462-bf071b2cca76)
 ![image](https://github.com/user-attachments/assets/1d10de48-1877-4660-bf97-53e2b80f082b)
@@ -167,6 +161,91 @@ HDBSCAN has grouped regions with similar density patterns. Clusters representing
 The clusters identified by HDBSCAN help pinpoint regions where microgrids could be more feasible. Lower-density clusters with less connectivity to high-density regions suggest areas that may benefit from decentralized energy solutions.
 
 The model labels some points as noise, indicating regions that are either too isolated or unique to fit into any cluster. These might require custom solutions, such as isolated power systems or further investigation to understand their unique characteristics.
+
+**(b). Classification Algorithms**
+*Objectives 2:
+Classify areas based on their suitability for microgrid installation and map regions with high wind speeds to optimize the placement of wind farms and mini-grids in off-grid locations.*
+
+### 3. Random Forest
+![image](https://github.com/user-attachments/assets/8bd0ca46-d215-4060-8183-7675514af1d3)
+
+### 4. XGBoost
+![image](https://github.com/user-attachments/assets/31484166-a477-437a-b4e1-8a93a225509d)
+
+### 5.Multi-Layered Perception Model (MLP)
+![image](https://github.com/user-attachments/assets/a6bfed07-d3fe-40eb-8c63-891315c8ca4b)
+![image](https://github.com/user-attachments/assets/affce2bc-50dd-407c-a7aa-99a76a804d7d)
+![image](https://github.com/user-attachments/assets/13aad6a3-3976-489d-937a-b3acc5a87b01)
+![image](https://github.com/user-attachments/assets/afaa5d7c-9276-4de9-9df5-891f48f094fd)
+![image](https://github.com/user-attachments/assets/950eb3c2-d504-4900-9274-88105916db81)
+Counties needing electricity:
+Income_Distribution_encoded
+0      15507
+1       8020
+2      14165
+3      10661
+4      13790
+5      11684
+6       4893
+7       8471
+8       8485
+9      31348
+10      9921
+11      8346
+12      9339
+13      6339
+14      9494
+15      5671
+16      8157
+17     31939
+18      7253
+19      8560
+20      1632
+21     17706
+22     23854
+23      3505
+24     10703
+25      4259
+26     18119
+27      2182
+28      8336
+29      5639
+30      9761
+31      5880
+32     32058
+33      4840
+34      5335
+35      6454
+36      9304
+37      4781
+38     14067
+39      4194
+40      5039
+41      5632
+42    289009
+43      7331
+44      4906
+45      3598
+46     11568
+dtype: int64
+
+![image](https://github.com/user-attachments/assets/9c38ee87-b8fe-4092-ab3a-885ad60bf069)
+Counties suitable for wind microgrids:
+Income_Distribution_encoded
+42    406805
+dtype: int64
+
+**Visualization of Results by County**
+![image](https://github.com/user-attachments/assets/5ae09a24-e9f0-4dde-b478-c4d9bf221f61)
+
+
+**Findings:**
+
+The machine learning analysis identified regions suitable for microgrids to be relatively densely populated, with an average of approximately 95.19 people per square kilometer. These areas also experience slightly stronger wind conditions, with an average speed of 6.14 m/s at 100 meters above ground level, making them well-suited for wind farms and microgrid installations.
+
+Grid infrastructures in these regions were found to be significantly limited. Given the region's population density, there is clearly a higher demand for electricity but limited transmission capacity.
+
+Approximately 50% of the population lives below the $2.15 poverty line, highlighting the high likelihood of rural-to-urban migration and the urgent need for economic empowerment.
 
 ### Recommendations
 
