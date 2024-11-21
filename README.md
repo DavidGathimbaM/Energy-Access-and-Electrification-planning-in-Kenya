@@ -78,6 +78,19 @@ The map provides a clear visual aid for identifying regions where wind  energy c
 ![image](https://github.com/user-attachments/assets/fd37e226-4766-4cd2-95a3-500357e7a245)
 
 
+**4. Data Extraction & Visualization: Kenya's Income Level**
+![image](https://github.com/user-attachments/assets/a7c1a68d-780d-4b66-aec5-1fb5d4d63da5)
+
+% of population living in households with consumption or income per person below the $2.15 poverty line.
+![image](https://github.com/user-attachments/assets/4b3e107b-14db-46e6-a44e-014dc9fcc6d9)
+
+**5. Data Extraction & Visualization: Grid Infrustructure**
+![image](https://github.com/user-attachments/assets/5d0c83f7-3051-4f7e-90bc-376b1d636f53)
+
+![image](https://github.com/user-attachments/assets/2887e454-701f-4b34-9f15-a49d363b5c53)
+![image](https://github.com/user-attachments/assets/60e5ebd1-d1da-4f88-ab10-8e5844c408a8)
+
+
 
 
 
