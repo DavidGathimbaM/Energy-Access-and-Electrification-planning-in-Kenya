@@ -31,6 +31,57 @@ Grid infrastructures in these regions were found to be significantly limited. Gi
 
 Approximately 50% of the population lives below the $2.15 poverty line, highlighting the high likelihood of rural-to-urban migration and the urgent need for economic empowerment.
 
+### Business Understanding
+This project addresses the pressing issue of low electricity access rates in Kenya, where approximately 25% of the population lacks reliable electricity.
+
+The project's objective is to use data-driven analysis to identify optimal regions for decentralized electrification solutions, such as wind microgrids.
+
+The topic is critical due to the social and economic impact of energy access on poverty reduction, economic development, and quality of life.
+
+The primary audience includes government entities, NGOs, and private investors interested in sustainable electrification.
+
+By providing a structured approach to identifying high-impact regions for renewable energy projects, the project can support better resource allocation, reduce infrastructure costs, and promote sustainable development.
+
+This project builds upon previous research in energy demand prediction, renewable energy potential assessment, and the socio-economic impact of electrification.
+
+### Data Understanding
+The following data was used to achieve the project objectives:
+
+Latitudes & Longitudes: These are Kenya’s spatial identifiers sourced from the Global Wind Atlas'.
+
+Population Density: This is the estimated number of people living within a 1 km² area, covering data from the year 2000 to 2020. Source: WorldPop Hub.
+
+Grid Infrastructure: Includes data on grid infrastructure, such as transmission lines and substations, sourced from the World Bank’s Global Electrification Platform (GEP).
+
+Wind Renewable Energy Potential: This identifies regions with high potential for wind renewable energy, based on wind speed measurements at 100 m/s above ground level and sea level. Source: Global Wind Atlas.
+
+Income Distribution: This is the proportion of the Kenyan population living in households with consumption or income per person below the $2.15 poverty line. Source: World Bank’s Global Subnational Poverty Atlas (GSAP).
+
+These datasets collectively enable the assessment and mapping of regions with low electrification rates, high electricity demand, and renewable energy potential.
+
+**1. Data Extraction & Visualization: Kenya's Electricity Generation & Demand**
+![image](https://github.com/user-attachments/assets/868f9990-2897-4582-a46d-994cbdeeca32)
+
+**2. Data Extraction and Visualization: Renewable Potential**
+![image](https://github.com/user-attachments/assets/65687bda-52c1-4401-afad-493b503a8867)
+
+![image](https://github.com/user-attachments/assets/4222fe30-5520-4e09-8b18-72c3479c25c3)
+
+The map provides a clear visual aid for identifying regions where wind  energy can address gaps in electricity access.
+![image](https://github.com/user-attachments/assets/d64e2c80-7350-4e70-ad47-1ded781202cb)
+
+**3. Data Extraction & Visualization: Kenya's Population Density**
+![image](https://github.com/user-attachments/assets/4b3cd2c0-0779-49b6-b16b-4ee36cdd3c9c)
+![image](https://github.com/user-attachments/assets/59a33379-3a05-4e20-8ed9-6d5291bb900b)
+
+![image](https://github.com/user-attachments/assets/efc414c2-e6f1-499c-a8bc-c41042d0e47d)
+![image](https://github.com/user-attachments/assets/fd37e226-4766-4cd2-95a3-500357e7a245)
+
+
+
+
+
+
 ### Recommendations
 
 The **government of Kenya** in collaboration with the **private sector** should adopt this deployment model as a strategic guide for the placement of wind farms and microgrids. This approach will enhance energy and electricity access, promote sustainable development, and strengthen the economic resilience of rural communities.
